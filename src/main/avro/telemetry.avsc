@@ -1,0 +1,12 @@
+{
+  "namespace": "io.confluent.iot.avro",
+  "type": "record",
+  "name": "Telemetry",
+  "fields": [
+    {"name": "telemetry_id", "type": "string"},
+    {"name": "shipment_id", "type": "string"},
+    {"name": "temperature", "type": "double"},
+    {"name": "timestamp", "type": "long"}
+  ]
+}
+//UUID telemetryId, UUID shipmentId, Double temperature, Instant timestamp

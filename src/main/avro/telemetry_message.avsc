@@ -1,0 +1,27 @@
+{
+  "namespace": "io.confluent.iot.avro",
+  "type": "record",
+  "name": "TelemetryMessage",
+  "fields": [
+    {
+      "name": "key",
+      "type": "string"
+    },
+    {
+      "name": "telemetries",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "telemetry",
+          "type": "Telemetry"
+        }
+      }
+    },
+    {
+      "name": "diff",
+      "type": "double"
+    }
+    //    String key, List<Telemetry> telemetries, Double diff) {
+  ]
+}
+//UUID telemetryId, UUID shipmentId, Double temperature, Instant timestamp
